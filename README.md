@@ -20,13 +20,11 @@ yarn build
 yarn lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-Attributes
-introList
 
-新手引导元素列表，属性值见下表	Array	
-是
+Attributes
+|参数|说明|类型|默认值|必须
+|----|----|----|----|----|
+|introList|新手引导元素列表，属性值见下表|Array|是
 visible
 
 是否可见	Boolean	false	是
