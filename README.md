@@ -24,38 +24,34 @@ yarn lint
 Attributes
 |参数|说明|类型|默认值|必须
 |----|----|----|----|----|
-|introList|新手引导元素列表，属性值见下表|Array|是
-visible
+|introList|新手引导元素列表，属性值见下表| |Array|是|
+|visible|是否可见|	Boolean|	false	|是|
+|nextButtonText|下一步按钮文案|	String|	下一步|	否|
+|startButtonText|
 
-是否可见	Boolean	false	是
-nextButtonText
+开始按钮文案|	String|	开始引导|否|
+|endButtonText
 
-下一步按钮文案	String	下一步	否
-startButtonText
+|完成按钮文案|	String|	完成引导|	否|
+|prevButtonText
 
-开始按钮文案	String	开始引导	否
-endButtonText
+|上一步按钮文案	|String|	上一步|	否|
+|initInsetPadding|
 
-完成按钮文案	String	完成引导	否
-prevButtonText
+目标元素框与目标元素间的间距|	Number|	5	|否|
+|initPadding|
 
-上一步按钮文案	String	上一步	否
-initInsetPadding
+目标元素框与border之间的间距|	Number|	0|	否|
+|indent|
 
-目标元素框与目标元素间的间距	Number	5	否
-initPadding
+目标元素框与提示信息之间的间距|	Number	|10|	否|
+|maskClick|
 
-目标元素框与border之间的间距	Number	0	否
-indent
+是否开启点击遮罩下一步|	Boolean|	false	|否|
+|showClose|
 
-目标元素框与提示信息之间的间距	Number	10	否
-maskClick
-
-是否开启点击遮罩下一步	Boolean	false	否
-showClose
-
-是否展示关闭按钮	Boolean	true	否
-customBackground
+是否展示关闭按钮|	Boolean|	true	|否|
+|customBackground
 
 
 
