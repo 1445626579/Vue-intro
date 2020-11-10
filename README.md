@@ -22,52 +22,25 @@ yarn lint
 
 
 Attributes
-|参数|说明|类型|默认值|必须
+|参数|说明|类型|默认值|必须|
 |----|----|----|----|----|
 |introList|新手引导元素列表，属性值见下表| |Array|是|
 |visible|是否可见|	Boolean|	false	|是|
 |nextButtonText|下一步按钮文案|	String|	下一步|	否|
-|startButtonText|
+|startButtonText|开始按钮文案|	String|	开始引导|否|
+|endButtonText|完成按钮文案|	String|	完成引导|	否|
+|prevButtonText|上一步按钮文案	|String|	上一步|	否|
+|initInsetPadding|目标元素框与目标元素间的间距|	Number|	5	|否|
+|initPadding|目标元素框与border之间的间距|	Number|	0|	否|
+|indent|目标元素框与提示信息之间的间距|	Number	|10|	否|
+|maskClick|是否开启点击遮罩下一步|	Boolean|	false	|否|
+|showClose|是否展示关闭按钮|	Boolean|	true	|否|
+|customBackground|是否自定义背景图，为true时不显示默认的背景图	|Boolean	|false|	否|
 
-开始按钮文案|	String|	开始引导|否|
-|endButtonText
-
-|完成按钮文案|	String|	完成引导|	否|
-|prevButtonText
-
-|上一步按钮文案	|String|	上一步|	否|
-|initInsetPadding|
-
-目标元素框与目标元素间的间距|	Number|	5	|否|
-|initPadding|
-
-目标元素框与border之间的间距|	Number|	0|	否|
-|indent|
-
-目标元素框与提示信息之间的间距|	Number	|10|	否|
-|maskClick|
-
-是否开启点击遮罩下一步|	Boolean|	false	|否|
-|showClose|
-
-是否展示关闭按钮|	Boolean|	true	|否|
-|customBackground
-
-
-
-是否自定义背景图，为true时不显示默认的背景图	Boolean	false	否
 IntroList属性说明,如不需要额外的配置，数组元素可以只写目标元素选择器字符串，否则为对象
-
-targetEl
-
-新手引导指向的目标元素，会根据元素所在位置自动计算新手引导位置，
-
-值为css选择器或DOM，推荐使用选择器，DOM可能会有未加载完成的可能
-
-第一步时或isStart时，此属性无效
-
-String|DOM	
-是
+|参数|说明|类型|默认值|必须|
+|----|----|----|----|----|
+|targetEl|新手引导指向的目标元素，会根据元素所在位置自动计算新手引导位置，值为css选择器或DOM，推荐使用选择器，DOM可能会有未加载完成的可能第一步时或isStart时，此属性无效|String|DOM	|是|
 isStart	是否为开始引导，当展示第一步时默认为true	Boolean	false	否
 hasPrevButton
 
