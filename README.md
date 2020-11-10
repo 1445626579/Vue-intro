@@ -61,17 +61,19 @@ yarn lint
 |close|	点击关闭按钮时的回调|	当前索引|
 |beforeEnter|	不支持Promise，在进入之前调用|	当前索引|
 ### slots
+|插槽名|说明|插槽变量|必须|
+|----|----|----|----|
 |default	|默认插槽为新手引导的提示信息，会根据元素顺序展示为新手引导的提示信息，第一个子级元素为第一步新手引导的提示信息，以此类推。子级数量不可低于新手引导步骤数，否则会报错|是|
-|control	|控制按钮区域的插槽	|1. config，本次新手引导的设置信息  
+|control	|控制按钮区域的插槽| 	|1. config，本次新手引导的设置信息  
 2. prev，上一步的响应函数  
 3. next,下一步的响应函数|
 
-否
+否|
 ### 小提示：
 1.尽量在mountd后使用
 
 2.如果页面中有图片，mountd后可能有图片未加载完成，图片加载完成时可能会引起页面的重排，重排会导致新手引导获取位置不正确，请等待图片加载完成后开始调用
-`
+```
 const imgsLoadFinish = Array.prototype.map.call(document.querySelectorAll('img'),img=>new Promise((resolve,reject)=>{
      img.onload = resolve
      img.onerror = reject
@@ -79,8 +81,7 @@ const imgsLoadFinish = Array.prototype.map.call(document.querySelectorAll('img')
 Promise.all(imgsLoadFinish).finally(()=>{
     //开始执行新手引导
 })
-
-`
+```
 3.当需要切换tab或请求数据后进行下一步引导时,可以在beforeEnter中等待操作完成执行resolve。
 
 4.当目标元素不在当前可视区域时，需要自行将目标元素调整到可视区域，如使用ScrollTo函数。这时不使用异步函数也可以
