@@ -4,7 +4,7 @@
 ### Attributes
 |参数|说明|类型|默认值|必须|
 |----|----|----|----|----|
-|introList|新手引导元素列表，属性值见下表| |Array|是|
+|introList|新手引导元素列表，属性值见下表|Array ||是|
 |visible|是否可见|	Boolean|	false	|是|
 |nextButtonText|下一步按钮文案|	String|	下一步|	否|
 |startButtonText|开始按钮文案|	String|	开始引导|否|
