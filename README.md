@@ -1,25 +1,5 @@
 # intro
 
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn dev
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
 
 ### Attributes
 |参数|说明|类型|默认值|必须|
